@@ -46,17 +46,17 @@ namespace EXE5
             }
             Panji = Panji.next;
             if (Panji == null)
-                Widiastuti = null;
+                Albiruni = null;
         }
         public void display()
         {
-            if (Renita == null)
+            if (Panji == null)
             {
                 Console.WriteLine("Queue is Empty or Filled !!!");
                 return;
             }
             Node display;
-            for (display = Renita; display != null; display = display.next)
+            for (display = Panji; display != null; display = display.next)
                 Console.WriteLine(display.name);
         }
     }
