@@ -19,7 +19,7 @@ using System.Collections.Generic;
 	}
 
 	// Function to create Circular queue
-	public static void enQueue(LinkedList q,
+	public void insert(LinkedList q,
 							int value)
 	{
 		Node temp = new Node();
@@ -39,7 +39,7 @@ using System.Collections.Generic;
 
 	// Function to delete element from
 	// Circular Queue
-	public static int deQueue(LinkedList q)
+	public static int remove(LinkedList q)
 	{
 		if (q.front == null)
 		{
@@ -68,7 +68,7 @@ using System.Collections.Generic;
 
 	// Function displaying the elements
 	// of Circular Queue
-	public static void displayQueue(LinkedList q)
+	public  void display(LinkedList q)
 	{
 		Node temp = q.front;
 		Console.Write("\nElements in Circular Queue are: ");
