@@ -19,7 +19,7 @@ using System.Collections.Generic;
 	}
 
 	// Function to create Circular queue
-	public void insert(LinkedList q,
+	public static void insert(LinkedList q,
 							int value)
 	{
 		Node temp = new Node();
@@ -83,7 +83,8 @@ using System.Collections.Generic;
 	// Driver Code
 	static void Main(string[] args)
 	{
-		Queues q = new Queues();
+		LinkedList q = new LinkedList();
+		q.front = q.rear = null;
 		char ch;
 		while (true)
 		{
